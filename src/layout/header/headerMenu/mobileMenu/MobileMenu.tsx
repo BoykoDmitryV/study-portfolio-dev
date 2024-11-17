@@ -11,6 +11,7 @@ export const MobileMenu: React.FC = () => {
             <Logo/>
             <S.BurgerButton aria-haspopup isOpen={false}>
                 <span></span>
+                <span></span>
             </S.BurgerButton>
 
             <S.MobileMenuPopup isOpen={false}>
