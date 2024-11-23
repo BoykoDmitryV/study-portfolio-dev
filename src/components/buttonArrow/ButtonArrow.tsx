@@ -1,32 +1,26 @@
 import React from 'react';
 import styled from "styled-components";
-import iconsSprite from "../../assets/images/icons-sprite.svg";
-import {FlexWrapper} from "../FlexWrapper";
 import '../../styles/info.css'
+import {Icon} from "../icon/Icon";
 
 type ButtonArrowPropsType = {
-    arrowId:string
-    width?:string
-    height?:string
-    viewBox?:string
-    style?:string
-    disabled?:boolean
+    arrowId: string
+    width?: string
+    height?: string
+    viewBox?: string
+    style?: string
+    disabled?: boolean
 }
 
 export const ButtonArrow = (props: ButtonArrowPropsType) => {
     return (
         <StyledButtonArrow disabled={props.disabled}>
-            <FlexWrapper align={"center"}>
-                <svg
-                    role="button"
-                    width={props.width || "40"}
-                    height={props.height || "40"}
-                    viewBox={props.viewBox || "0 0 40 40"}
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <use xlinkHref={`${iconsSprite}#${props.arrowId}`}/>
-                </svg>
-            </FlexWrapper>
+            <Icon
+                width={props.width || "40"}
+                height={props.height || "40"}
+                viewBox={props.viewBox || "0 0 40 40"}
+                iconId={props.arrowId}
+            />
         </StyledButtonArrow>
     );
 };

@@ -1,8 +1,7 @@
 import React from 'react';
 import {Information} from "../../../../components/Information";
-import {ButtonArrow} from "../../../../components/buttonArrow/ButtonArrow";
-import {FlexWrapper} from "../../../../components/FlexWrapper";
 import {S} from './BoxEmail_Styles'
+import {Icon} from "../../../../components/icon/Icon";
 
 export const BoxEmail = () => {
     return (
@@ -13,12 +12,13 @@ export const BoxEmail = () => {
                 <S.Field aria-label="Your email  address"/>
                 <Information title={"Tell about the project:"}/>
                 <S.Field aria-label="Tell about the project"/>
-                <S.BoxButton>
-                    <FlexWrapper align={"center"}>
-                        <S.FooterButton>Send</S.FooterButton>
-                        <ButtonArrow arrowId={"arrow-right"} aria-label="Next" width={"30px"} height={"30px"}/>
-                    </FlexWrapper>
-                </S.BoxButton>
+                    <S.SendButton>Send
+                        <Icon width={"40"}
+                              height={"40"}
+                              viewBox={"0 0 40 40"}
+                              iconId={"arrow-right"}
+                        />
+                    </S.SendButton>
         </S.StyledBoxEmail>
     );
 };

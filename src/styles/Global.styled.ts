@@ -38,10 +38,10 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 1.2;
         min-width: 375px;
     }
-
+    
     section {
         padding: 100px 0;
-        
+                
         @media ${theme.media.mobile} {
             padding: 40px 0 90px;
         }

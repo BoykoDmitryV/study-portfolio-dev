@@ -6,7 +6,7 @@ const Works = styled.section`
     position: relative;
     
     @media ${theme.media.mobile} {
-        padding: 40px 0px 90px;
+        padding: 40px 0 90px;
     }
 `
 
@@ -14,6 +14,7 @@ const WorksContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
     
     @media ${theme.media.mobile} {
         flex-direction: column;

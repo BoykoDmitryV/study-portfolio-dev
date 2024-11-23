@@ -8,6 +8,7 @@ import {Footer} from "./layout/footer/Footer";
 import {Header} from "./layout/header/Header";
 import {Particle} from "./components/particle/Particle";
 import {GoTopBtn} from "./components/goTopBtn/GoTopBtn";
+import "./App.css"
 
 function App () {
     return (

@@ -36,8 +36,8 @@ const StyledWork = styled.li<StyledWorkPropsType>`
     justify-content: flex-end;
     align-items: flex-start;
     
-    @media ${theme.media.mobile} {
-        max-width: 335px;
+    @media ${theme.media.tablet} {
+        width: 100%;
         height: 176px;
     }
 `

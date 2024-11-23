@@ -16,16 +16,16 @@ export const ButtonMenu = () => {
 };
 
 const StyledButtonMenu = styled(Link)`
-    width: 157px;
-    height: 50px;
-    padding: 10px 20px;
+    padding: 14px 20px;
     background: ${theme.colors.accent};
     ${font({weight: 500, Fmax: 20, Fmin: 20})}
     color: ${theme.colors.font};
-    
-    &:hover, &.active {
-        box-shadow: 2px -2px 4px rgba(103, 108, 219, 1);
+    border: 2px solid #676CDB;
+
+    &:hover {
         transition: ${theme.animations.transition};
+        color: ${theme.colors.accent};
+        background-color: transparent;
     }
     
     @media ${theme.media.tablet} {

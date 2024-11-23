@@ -32,14 +32,20 @@ const Field = styled.input`
     transition: ${theme.animations.transition}
 `
 
-const FooterButton = styled.button`
+const SendButton = styled.button`
     font-size: 30px;
     color: ${theme.colors.accent};
     margin-right: 46px;
-
-    &:hover {
-        opacity: 0.8;
+    display: flex;
+    gap: 40px;
+    svg {
         transition: ${theme.animations.transition};
+    }
+    
+    &:hover {
+        svg {
+            transform: translateX(10px);
+        }
     }
 `
 const BoxButton = styled.div`
@@ -49,6 +55,6 @@ const BoxButton = styled.div`
 export const S = {
     StyledBoxEmail,
     Field,
-    FooterButton,
+    SendButton,
     BoxButton,
 }

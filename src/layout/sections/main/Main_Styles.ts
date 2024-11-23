@@ -7,7 +7,7 @@ const Main = styled.section`
     background: url(${photo1}) no-repeat;
     background-size: calc(50%);
     background-position: right;
-    background-color: ${theme.colors.primaryBg};
+    position: relative;
 
     @media ${theme.media.mobile} {
         background-size: calc(0%);
@@ -16,10 +16,11 @@ const Main = styled.section`
 `
 
 const Photo = styled.img`
-    opacity: 100;
+    opacity: 1;
     width: 0%;
     height: 0%;
-    
+    position: relative;
+
     @media ${theme.media.mobile} {
         width: 100%;
         height: 100%;
@@ -33,11 +34,11 @@ const Photo = styled.img`
 const SmallText = styled.h1`
     ${font({family: "'Playfair Display', sans-serif", weight: 700, Fmax: 90, Fmin: 50})}
     padding: 75px 0 10px;
-    
+
     p {
         display: none;
     }
-    
+
     @media ${theme.media.mobile} {
         padding: 40px 0 30px;
     }
@@ -51,7 +52,7 @@ const BoxContainer = styled.div`
     padding-bottom: 40px;
 
     @media ${theme.media.mobile} {
-        margin: 0px 0 50px;
+        margin: 0 0 50px;
     }
 `
 
@@ -74,19 +75,21 @@ const ButtonOne = styled.button`
     align-items: center;
     justify-content: center;
     gap: 10px;
-    width: 203px;
+    width: 204px;
     height: 64px;
     background: ${theme.colors.accent};
     color: ${theme.colors.font};
-    
+    border: 2px solid #676CDB;
+
     &:hover {
-        box-shadow: 2px -2px 4px rgba(103, 108, 219, 1);
         transition: ${theme.animations.transition};
+        color: ${theme.colors.accent};
+        background-color: transparent;
     }
-    
+
     @media ${theme.media.tablet} {
         width: 180px;
-        height: 53px;
+        height: 52px;
     }
 `
 
@@ -99,12 +102,12 @@ const ButtonTwo = styled.button`
     text-decoration: underline;
     width: 201px;
     height: 44px;
-    
+
     &:hover {
-        filter: drop-shadow(4px -4px 2px ${theme.colors.accent});
         transition: ${theme.animations.transition};
+        color: ${theme.colors.accent};
     }
-    
+
     @media ${theme.media.tablet} {
         width: 195px;
         height: 53px;

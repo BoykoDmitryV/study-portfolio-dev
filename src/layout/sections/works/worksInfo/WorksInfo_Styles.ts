@@ -12,7 +12,9 @@ const WorksInfo = styled.div`
         flex-direction: row;
         gap: 30px;
         justify-content: space-between;
-        padding-bottom: 14px;
+        position: absolute;
+        top: 22%;
+        padding-bottom: 0;
     }
 `
 

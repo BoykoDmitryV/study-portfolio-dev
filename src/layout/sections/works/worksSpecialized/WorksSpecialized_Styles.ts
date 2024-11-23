@@ -21,7 +21,7 @@ const SmallText = styled.p`
     text-align: center;
     padding-bottom: 15px;
     ${font({Fmax: 40, Fmin: 24, weight: 700, lineHeight: 1.8})} @media ${theme.media.mobile} {
-    padding: 60px 0;
+    padding: 60px 0 200px;
 }
 `
 
