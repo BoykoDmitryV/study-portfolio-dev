@@ -7,6 +7,7 @@ const Footer = styled.footer`
     letter-spacing: 0.02em;
     background-color: ${theme.colors.secondaryBg};
     padding-bottom: 50px;
+    position: relative;
 
     @media ${theme.media.tablet} {
         padding: 30px 0;

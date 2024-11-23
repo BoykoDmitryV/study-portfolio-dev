@@ -8,7 +8,7 @@ const BoxInformation = styled.div`
     display: flex;
     
     @media ${theme.media.tablet} {
-        padding-top: 70px;
+        padding-top: 110px;
         height: 100%;
         ${FlexWrapper} {
             gap: 30px;

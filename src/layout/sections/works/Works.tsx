@@ -6,7 +6,7 @@ import {WorksSpecialized} from "./worksSpecialized/WorksSpecialized";
 
 export const Works: React.FC = () => {
     return (
-        <S.Works>
+        <S.Works id={"about"}>
             <Container>
                 <S.WorksContainer>
                     <WorksInfo/>

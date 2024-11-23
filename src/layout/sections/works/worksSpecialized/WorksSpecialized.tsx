@@ -6,7 +6,7 @@ import {S} from './WorksSpecialized_Styles'
 export const WorksSpecialized: React.FC = () => {
     return (
         <S.BoxSpecialized>
-            <S.SmallText>Developer and Designer, specialized in <br/> UI/UX and Web Developer</S.SmallText>
+            <S.SmallText>Developer and Designer, specialized&nbsp;in <br/> UI/UX and Web Developer</S.SmallText>
                 <S.CardBox>
                     <Work
                         iconId={"computer"}

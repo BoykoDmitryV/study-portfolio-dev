@@ -1,0 +1,38 @@
+.alice-carousel__dots {
+    display: none;
+}
+
+.alice-carousel__prev-btn {
+    position: absolute;
+    top: 90%;
+    left: 426px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+
+    @media screen and (max-width: 768px) {
+        position: absolute;
+        top: 100%;
+        left: 10px;
+    }
+}
+
+.alice-carousel__next-btn {
+    position: absolute;
+    top: 90%;
+    left: 476px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+
+    @media screen and (max-width: 768px) {
+        position: absolute;
+        top: 100%;
+        left: 65px;
+    }
+}
+
+/*//не работает лайн хайт для текста, значение 1.8*/
+

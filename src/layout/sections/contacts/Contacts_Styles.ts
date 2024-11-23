@@ -3,6 +3,7 @@ import {theme} from "../../../styles/Theme";
 
 const Contacts = styled.section`
     background: ${theme.colors.secondaryBg};
+    position: relative;
 `
 
 const ContactsBox = styled.div`

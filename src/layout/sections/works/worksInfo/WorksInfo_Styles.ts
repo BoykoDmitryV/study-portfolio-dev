@@ -10,6 +10,7 @@ const WorksInfo = styled.div`
     
     @media ${theme.media.mobile} {
         flex-direction: row;
+        gap: 30px;
         justify-content: space-between;
         padding-bottom: 14px;
     }

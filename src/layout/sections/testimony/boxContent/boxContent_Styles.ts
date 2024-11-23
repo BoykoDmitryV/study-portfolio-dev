@@ -2,17 +2,24 @@ import styled from "styled-components";
 import {theme} from "../../../../styles/Theme";
 
 const BoxInformation = styled.div`
-    max-width: 895px;
+    max-width: 894px;
+    width: 100%;
     display: flex;
     height: 100%;
+    //border: 1px solid red;
+    
+    &:hover {
+        cursor: pointer;
+    }
     
     @media ${theme.media.tablet} {
         flex-direction: column;
     }
 `
 
-const Photo = styled.img`
+const Image = styled.img`
     max-width: 405px;
+    min-width: 405px;
     height: 395px;
     //background: #c4c4c4, url("path_to_image");
     object-fit: cover;
@@ -42,15 +49,19 @@ const BoxTitle = styled.h3`
     
     @media ${theme.media.tablet} {
         height: 100px;
-        padding-top: 25px;
+        padding-top: 12px;
     }
 `
 
-const BoxP = styled.p`
+const BoxText = styled.p`
     font-weight: 700;
+    max-height: 248px;
+    overflow: auto;
     
     @media ${theme.media.tablet} {
-        margin-bottom: 20px;
+        margin-bottom: 82px; //после текста изменить на 20пикс
+        height: 100%;
+        max-height: 400px;
     }
 `
 
@@ -63,9 +74,11 @@ const BoxButton = styled.div`
 
 export const S = {
     BoxInformation,
-    Photo,
+    Image,
     BoxContainer,
     BoxTitle,
-    BoxP,
+    BoxText,
     BoxButton
 }
+
+//wrap щдля боксконтенти=а и выровнять информатион в стрку для ворков @контейнер через локальный медиазапрос

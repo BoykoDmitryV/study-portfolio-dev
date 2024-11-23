@@ -74,17 +74,21 @@
               fill="#676CDB"/>
     </g>
     //arrows
-    <g id="arrow-left">
-        <path d="M33.3333 20H6.66667" stroke="#676CDB" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round"/>
-        <path d="M18.3333 31.6667L6.66667 20L18.3333 8.33335" stroke="#676CDB" stroke-opacity="0.5" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="arrow-left" transform="translate(40, 0) scale(-1, 1)">
+        <path d="M6.66666 20.0001H33.3333" stroke="#676CDB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M21.6667 8.33337L33.3333 20L21.6667 31.6667" stroke="#676CDB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     </g>
+
     <g id="arrow-right">
         <path d="M6.66663 20H33.3333" stroke="#676CDB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M21.6666 8.33334L33.3333 20L21.6666 31.6667" stroke="#676CDB" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round"/>
     </g>
+
+    <g id="arrowGoTop">
+        <path d="M6.80722 4.2806V15H9.19278V4.2806L14.3134 9.08118L16 7.5L8 0L0 7.5L1.6866 9.08118L6.80722 4.2806Z" fill="white"/>
+    </g>
+
     //social
     <g id="dribble">
     <path d="M22.9167 12.5C22.9184 13.872 22.6483 15.2308 22.1218 16.4978C21.5954 17.7649 20.823 18.915 19.8495 19.8818C18.8839 20.8457 17.7378 21.6098 16.4767 22.1306C15.2157 22.6513 13.8644 22.9184 12.5 22.9167C6.74688 22.9167 2.08334 18.2531 2.08334 12.5C2.0797 9.82905 3.10567 7.25946 4.94792 5.32552C5.91997 4.29979 7.09111 3.4832 8.38965 2.92572C9.6882 2.36824 11.0868 2.0816 12.5 2.08334C13.8644 2.08157 15.2157 2.34869 16.4767 2.86944C17.7378 3.39018 18.8839 4.15434 19.8495 5.11823C20.823 6.08502 21.5954 7.23515 22.1218 8.50216C22.6483 9.76918 22.9184 11.128 22.9167 12.5V12.5Z"

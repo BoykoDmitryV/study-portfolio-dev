@@ -4,14 +4,25 @@ import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Icon} from "../../../components/icon/Icon";
 import {S} from './Main_Styles'
+import Typewriter from 'typewriter-effect';
 
 export const Main: React.FC = () => {
     return (
-        <S.Main>
+        <S.Main id={"home"}>
             <S.Photo src={photo1} alt=""/>
             <Container>
                 <FlexWrapper direction={"column"} wrap={"reverse"}>
-                    <S.SmallText>Hello! <br/> I’m Zarror Nibors</S.SmallText>
+                    <S.SmallText>
+                        <p>Hello! <br/> I’m Zarror Nibors</p>
+                        <Typewriter
+                            options={{
+                                strings: ['Hello! <br/> I’m Zarror Nibors'],
+                                autoStart: true,
+                                loop: true,
+                                delay: 150,
+                            }}
+                        />
+                    </S.SmallText>
                     <S.BoxContainer>
                         <S.BoxText>
                             I’am freelance <S.ColorText>web developer</S.ColorText> based in Indonesia who loves to craft

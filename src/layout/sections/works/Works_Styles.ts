@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const Works = styled.section`
     background: ${theme.colors.primaryBg};
+    position: relative;
     
     @media ${theme.media.mobile} {
         padding: 40px 0px 90px;
@@ -17,6 +18,7 @@ const WorksContainer = styled.div`
     @media ${theme.media.mobile} {
         flex-direction: column;
     }
+    
 `
 
 export const S = {

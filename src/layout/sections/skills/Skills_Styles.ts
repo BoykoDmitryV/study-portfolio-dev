@@ -5,6 +5,7 @@ const Skills = styled.section`
     background: ${theme.colors.secondaryBg};
     padding: 50px 0;
     overflow: auto;
+    position: relative;
 `
 
 const IconsBox = styled.div`

@@ -19,8 +19,10 @@ export const Icon = (props: IconPropsType) => {
     );
 };
 
-const StyledIcon = styled.a`
-    //:hover {
-    //    transform: translateY(-4px);
-    //}
-`
+// const StyledIcon = styled.a`
+//     :hover {
+//         //transform: translateY(-2px);
+//         filter: drop-shadow(4px -4px 2px ${theme.colors.accent});
+//         transition: ${theme.animations.transition};
+//     }
+// `

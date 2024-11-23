@@ -16,6 +16,14 @@ const SocialIcons = styled.ul`
     display: flex;
     justify-content: space-between;
 
+    & li {
+        :hover {
+            transform: translateY(-2px);
+            filter: drop-shadow(2px -2px 2px ${theme.colors.accent});
+            transition: ${theme.animations.transition};
+        }
+    }
+
     @media ${theme.media.tablet} {
         padding: 60px 0 90px;
     }

@@ -34,6 +34,10 @@ const SmallText = styled.h1`
     ${font({family: "'Playfair Display', sans-serif", weight: 700, Fmax: 90, Fmin: 50})}
     padding: 75px 0 10px;
     
+    p {
+        display: none;
+    }
+    
     @media ${theme.media.mobile} {
         padding: 40px 0 30px;
     }
@@ -75,6 +79,11 @@ const ButtonOne = styled.button`
     background: ${theme.colors.accent};
     color: ${theme.colors.font};
     
+    &:hover {
+        box-shadow: 2px -2px 4px rgba(103, 108, 219, 1);
+        transition: ${theme.animations.transition};
+    }
+    
     @media ${theme.media.tablet} {
         width: 180px;
         height: 53px;
@@ -90,7 +99,12 @@ const ButtonTwo = styled.button`
     text-decoration: underline;
     width: 201px;
     height: 44px;
-
+    
+    &:hover {
+        filter: drop-shadow(4px -4px 2px ${theme.colors.accent});
+        transition: ${theme.animations.transition};
+    }
+    
     @media ${theme.media.tablet} {
         width: 195px;
         height: 53px;

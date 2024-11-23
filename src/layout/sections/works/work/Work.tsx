@@ -37,7 +37,7 @@ const StyledWork = styled.li<StyledWorkPropsType>`
     align-items: flex-start;
     
     @media ${theme.media.mobile} {
-        width: 335px;
+        max-width: 335px;
         height: 176px;
     }
 `

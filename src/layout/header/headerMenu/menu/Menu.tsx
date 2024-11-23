@@ -5,13 +5,28 @@ export const Menu = () => {
     return (
         <S.StyledMenu>
             <S.MenuItem>
-                <S.Link href="#">Home</S.Link>
+                <S.NavLink
+                    to="home"
+                    smooth={true}
+                    activeClass="active"
+                    spy={true}
+                >Home</S.NavLink>
             </S.MenuItem>
             <S.MenuItem>
-                <S.Link href="#">About</S.Link>
+                <S.NavLink
+                    to="about"
+                    smooth={true}
+                    activeClass="active"
+                    spy={true}
+                >About</S.NavLink>
             </S.MenuItem>
             <S.MenuItem>
-                <S.Link href="#">Services</S.Link>
+                <S.NavLink
+                    to="services"
+                    smooth={true}
+                    activeClass="active"
+                    spy={true}
+                >Services</S.NavLink>
             </S.MenuItem>
         </S.StyledMenu>
     );
