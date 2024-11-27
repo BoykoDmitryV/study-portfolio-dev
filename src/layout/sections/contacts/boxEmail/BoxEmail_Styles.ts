@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {InfoName} from "../../../../components/Information";
 import {theme} from "../../../../styles/Theme";
 
-const StyledBoxEmail = styled.div`
+const StyledBoxEmail = styled.form`
     max-width: 500px;
     width: 100%;
     display: flex;
