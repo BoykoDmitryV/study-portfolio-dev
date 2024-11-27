@@ -9,11 +9,17 @@ const BoxSpecialized = styled.div`
         text-align: center;
     }
 
-    @media (min-width: 794px) and (max-width: 1200px) {
+    @media (min-width: 768px) and (max-width: 1200px) {
         li:first-child {
             max-width: 590px;
             width: 100%;
-        }
+        }}
+    
+    @media (min-width: 768px) and (max-width: 900px) {
+        li:nth-child(2), li:nth-child(3) {
+            max-width: 590px;
+            width: 100%;
+        }}
     }
 `
 
