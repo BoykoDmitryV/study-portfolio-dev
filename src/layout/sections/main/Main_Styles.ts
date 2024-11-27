@@ -28,6 +28,7 @@ const Photo = styled.img`
         object-fit: cover;
         opacity: 100;
         padding-right: 0;
+        
     }
 `
 
