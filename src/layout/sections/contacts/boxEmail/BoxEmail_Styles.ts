@@ -15,9 +15,6 @@ const StyledBoxEmail = styled.form`
         font-weight: 500;
         font-size: 22px;
     }
-    //textarea {
-    //    resize: none;
-    //}
 `
 
 const Field = styled.input`
